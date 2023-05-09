@@ -1,2 +1,2 @@
 for n in range(0, 99):
-    print("{} = {}".format(n, hex(n)))
+    print("{0} = {1}".format(n, hex(n)))
