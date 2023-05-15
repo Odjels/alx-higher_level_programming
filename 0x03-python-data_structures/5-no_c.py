@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
 def no_c(my_string):
-    chars = len(my_string)
-    buf = ""
-    for i in range(0, chars):
-        if my_string[i] == "c" or my_string[i] == "C":
+    s = len(my_string)
+    bab = ""
+    for a in range(0, s):
+        if my_string[a] == "c" or my_string[a] == "C":
             continue
-        buf = buf + my_string[i]
-    return buf
+        bab = bab + my_string[a]
+    return bab
