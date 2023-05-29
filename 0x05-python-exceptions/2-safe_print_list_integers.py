@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
 def safe_print_list_integers(my_list=[], x=0):
-     real_num = 0
+     real = 0
     for b in range(0, x):
         try:
             print("{:d}".format(my_list[b]), end="")
-            real_num += 1
+            real += 1
         except (ValueError, TypeError):
             continue
     print("")
-    return (real_num)
+    return real
