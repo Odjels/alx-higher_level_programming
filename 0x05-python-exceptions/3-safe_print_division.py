@@ -8,5 +8,5 @@ def safe_print_division(a, b):
         print("You cant divide by zero")
         return None
     finally:
-        print("Inside result: {}".format(res))
+        print("Inside result: {}".format(div_value)
     return div_value
