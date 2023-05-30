@@ -21,11 +21,11 @@ class Square():
             raise TypeError("size must be an integer")
 
     def area(self):
-        """ Returns the area of a square """
+          """ Returns the area of a square """
           return (self.__size ** 2)
 
     def my_print(self):
-        """ print square of using hashes """
+          """ print square of using hashes """
           if self.__size == 0:
             print("")
         else:
@@ -33,4 +33,4 @@ class Square():
                 for b in range(self.__size):
                     print('#', end="")
                 print("")
-     """prints the square with character # """
+                """prints the square with character # """

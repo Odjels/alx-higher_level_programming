@@ -10,7 +10,7 @@ class Square:
 
     @property
     def size(self):
-         return (self.__size)
+        return (self.__size)
 
     @size.setter
     def size(self, value):
@@ -23,12 +23,12 @@ class Square:
     @property
     def position(self):
         """ retrieves position """
-         return self.__position
+        return self.__position
 
     @position.setter
     def position(self, value):
         """ sets the position of a square """
-         if (isinstance(value, tuple) and len(value) == 2 and
+        if (isinstance(value, tuple) and len(value) == 2 and
                 all(isinstance(v, int) for v in value) and
                 all(v >= 0 for v in value)):
             self.__position = value
@@ -41,7 +41,7 @@ class Square:
 
     def my_print(self):
         """ print square of using hashes """
-         if self.__size == 0:
+        if self.__size == 0:
             print("")
         else:
             for c in range(self.__position[1]):

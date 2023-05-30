@@ -2,15 +2,15 @@
 """ this module represents a class square """
 
 class Square():
-    """ initailizing data """
+     """ initailizing data """
      def __init__(self, size=0):
          """square class with size attribute"""
-        self.size = size
+         self.size = size
 
      @property
      def size(self):
           return self.__size
-        """Get the size of the square."""
+          """Get the size of the square."""
 
 
     @size.setter
@@ -21,8 +21,8 @@ class Square():
             self.__size = value
         else:
             raise TypeError("size must be an integer")
-         """ This sets the value of the attribute size."""
+            """ This sets the value of the attribute size."""
 
       def area(self):
-              """ Returns the area of a square """
+           """ Returns the area of a square """
            return (self.__size ** 2)
