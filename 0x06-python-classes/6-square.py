@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+""" this module represents a class square """
 
 class Square:
+    """Represents a square class """
     def __init__(self, size=0, position=(0, 0)):
+        """Initialize data"""
         self.size = size
         self.position = position
 
@@ -19,10 +22,12 @@ class Square:
 
     @property
     def position(self):
+        """ retrieves position """
          return self.__position
 
     @position.setter
     def position(self, value):
+        """ sets the position of a square """
          if (isinstance(value, tuple) and len(value) == 2 and
                 all(isinstance(v, int) for v in value) and
                 all(v >= 0 for v in value)):
@@ -31,9 +36,11 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
 
     def area(self):
+        """ Returns the area of a square """
         return (self.__size ** 2)
 
     def my_print(self):
+        """ print square of using hashes """
          if self.__size == 0:
             print("")
         else:

@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+""" this module represents a class square """
 
 class Square():
+    """ initailizing data """
      def __init__(self, size=0):
+         """square class with size attribute"""
         self.size = size
 
      @property
@@ -21,4 +24,5 @@ class Square():
          """ This sets the value of the attribute size."""
 
       def area(self):
+              """ Returns the area of a square """
            return (self.__size ** 2)
