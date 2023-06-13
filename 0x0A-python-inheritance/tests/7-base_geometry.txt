@@ -14,13 +14,13 @@ Now Testing:
 	Tese_case 1: value = integer
 
 	>>> var = bg()
-	>>> var.integer_validator('number', 15)
+	>>> var.integer_validator('number', 26)
 
 ***********************************************
 	Tese_case 1: value = string
 
 	>>> var = bg()
-	>>> var.integer_validator('number', '15') # doctest: +ELLIPSIS
+	>>> var.integer_validator('number', '26') # doctest: +ELLIPSIS
 	Traceback (most recent call last):
 	...
 	TypeError: number must be an integer
@@ -29,7 +29,7 @@ Now Testing:
 	Tese_case 1: value = number less  than 0
 
 	>>> var = bg()
-	>>> var.integer_validator('number', -1) # doctest: +ELLIPSIS
+	>>> var.integer_validator('number', -4) # doctest: +ELLIPSIS
 	Traceback (most recent call last):
 	...
 	ValueError: number must be greater than 0
@@ -89,7 +89,7 @@ Testing too many arguments for area:
 **********************************************
 
 Testing integer validator for passing integer:
-	 >>> b.integer_validator("integer", 1)
+	 >>> b.integer_validator("integer", 7)
 
 **********************************************
 
@@ -102,7 +102,7 @@ Testing for integer == 0:
 **********************************************
 
 Testing for integer < 0;
-	 >>> b.integer_validator("integer", -5)
+	 >>> b.integer_validator("integer", -3)
 	 Traceback (most recent call last):
          ...
          ValueError: integer must be greater than 0
@@ -114,11 +114,11 @@ Testing for non-integer types:
 	 Traceback (most recent call last):
          ...
          TypeError: bool must be an integer
-	 >>> b.integer_validator("float", 1.5)
+	 >>> b.integer_validator("float", 1.8)
          Traceback (most recent call last):
          ...
          TypeError: float must be an integer
-	 >>> b.integer_validator("complex", complex(1, 1))
+	 >>> b.integer_validator("complex", complex(1, 3))
          Traceback (most recent call last):
          ...
          TypeError: complex must be an integer
@@ -142,7 +142,7 @@ Testing for only 1 argument to integer_validator:
 **********************************************
 
 Testing for too many arguments:
-	 >>> b.integer_validator("integer", 1, 2)
+	 >>> b.integer_validator("integer", 1, 5)
 	 Traceback (most recent call last):
          ...
 	 TypeError: integer_validator() takes 3 positional arguments but 4 were given
