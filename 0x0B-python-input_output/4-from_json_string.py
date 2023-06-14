@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""" module forb task 4 """
+""" json string to object """
 
 
 import json
 
 
 def from_json_string(my_str):
-    """ convert json file to python dict """
+    """ converting a json file to python dict """
     return json.loads(my_str)

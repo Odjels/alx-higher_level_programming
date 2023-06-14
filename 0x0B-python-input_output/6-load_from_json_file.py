@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-""" module for task 6 """
+""" creating object from a json file """
 
 
 import json
 
 
 def load_from_json_file(filename):
-    """ return data from json file """
+    """ return the data from the json file """
     with open(filename, mode="r", encoding="utf-8") as f:
         return json.load(f)

@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" module for writing text """
+""" writing text """
 
 
 def write_file(filename="", text=""):
-    """ write text to a file """
+    """ writing the text to a file """
     with open(filename, encoding="utf-8", mode="w") as f:
-        number_of_characters = f.write(text)
-        return number_of_characters
+        n_o_c = f.write(text)
+        return n_o_c
