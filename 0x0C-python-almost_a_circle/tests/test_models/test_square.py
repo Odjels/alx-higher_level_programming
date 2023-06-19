@@ -446,4 +446,4 @@ class TestSquareMethods(unittest.TestCase):
         loutput = Square.load_from_file()
 
         for a in range(len(linput)):
-            self.assertEqual(linput[i].__str__(), loutput[i].__str__())
+            self.assertEqual(linput[a].__str__(), loutput[a].__str__())
