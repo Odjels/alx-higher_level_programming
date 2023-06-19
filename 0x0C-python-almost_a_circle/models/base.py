@@ -55,11 +55,11 @@ class Base:
         """
         if dictionary and dictionary != {}:
             if cls.__name__ == "Rectangle":
-                now = cls(1, 1)
+                new = cls(1, 1)
             else:
-                now = cls(1)
-            now.update(**dictionary)
-            return now
+                new = cls(1)
+            new.update(**dictionary)
+            return new
 
     @classmethod
     def load_from_file(cls):
@@ -131,7 +131,7 @@ class Base:
             turt.hideturtle()
 
         turt.color("#b5e3d8")
-        for sq in list_squares:
+        for sqr in list_squares:
             turt.showturtle()
             turt.up()
             turt.goto(sq.x, sq.y)
